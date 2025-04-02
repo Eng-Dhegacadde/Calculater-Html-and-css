@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+body{
+display: flex;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+#calculator{
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgb(10, 0, 0);
+}
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: rgb(146, 126, 126);
+    color: #fff;
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 10px;
+}
+button{
+    margin: 10px 15px;
+    width: 70px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: gray;
+    font-size: 20px;
+    color: white;
+}
+.oper{
+    background-color: orange;
+}
+.dheeraad{
+    background-color: white;
+    color: black;
+}
+    </style>
+</head>
+<body>
+    <div id="calculator">
+       <input type="text" id="display" > 
+       <div id="keys">
+        <button class="dheeraad">AC</button>
+        <BUtton class="dheeraad">+/-</BUtton>
+        <BUtton class="dheeraad">%</BUtton>
+        <button class="oper">/</button>
+        <button>7</button> 
+        <button>8</button>
+        <button>9</button>
+        <button class="oper">+</button>
+        <button>6</button>
+        <button>5</button>     
+        <button>4</button>
+        <button class="oper">-</button>
+        <button>3</button>   
+        <button>2</button>
+        <button>1</button>
+        <button class="oper">*</button>
+        <button>.</button>
+        <button>=</button>
+        <button>0</button>
+       </div>
+    </div>
+</body>
+</html>
